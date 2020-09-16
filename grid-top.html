@@ -1,0 +1,343 @@
+<!doctype html>
+
+<html>
+	<head>
+
+		<title>AnnsSite.com | Home | Websites on a Budget</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto+Mono:300,300i,700|Sacramento" rel="stylesheet">
+        <link rel="stylesheet" href="styles2.css">
+        
+	</head>
+
+	<body id="grid">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </span>
+            <a href="index.html" class="logo"><img src="kitty-icon-white-text.png"><h3>AnnsSite.com</h3></a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="nav-links">Portfolio</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-links">About Me</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-links">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+         <section id="grid-container" style="">
+            <ul class="upper-grid">
+                <li class="box box2"><a>something</a></li>
+                <li class="box box3">something</li>
+                <li class="box box4">something</li>
+                <li class="box box5 color big-type"><a href="index.html">something</a></li>
+                
+            </ul>
+            <div class="main-grid">
+                <div class="upper-left"><div class="vert">a.f.newcomer@gmail.com</div></div>
+                <div class="upper-right big-type">web development, get found online, Google Ads</div>
+                <div class="center-left big-type">Web development on a budget</div>
+                <div class="center-bottom-left">To contact me</div>
+                <div class="center-bottom-right">You can email me here: or call me here:</div>
+            </div>            
+             
+         </section>
+
+
+        <footer>Designed by Ann Newcomer 2018</footer>
+
+        <!-- Special CSS for this page only -->
+        <style>
+           /* html {        
+            transform: perspective(2100px) rotateY(-35deg);
+            }
+            * {
+                border: 1px solid black;
+            }*/
+            body#grid {
+                width: 100%;
+                /*if menu is gone, remove universal padding from body*/
+                padding-top: 0;
+                height: initial;
+            }
+            .navbar {
+                width: 100%;
+                display:none;
+            }
+            section#grid-container a {
+                color: initial;
+            }
+            section#grid-container a:hover {
+                color: rgba(0,0,0, .7);
+                border-bottom: 10px solid #B7E9E0;
+                border-top: 10px solid transparent;
+                padding: 6px;
+                display: inline-block;
+            }
+
+            section#grid-container {
+                font-family:  Montserrat, sans-serif;
+                line-height: .9em;
+                /*width: 90%;*/
+                /*max-width: 1200px;*/
+                /*margin-top: 70px;*/
+                /*border: 1px red solid;*/
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                padding: 0;
+                max-width: 100%;
+            }
+            #grid-container div {
+                /*border: 1px black solid;*/
+            }
+            section#grid-container .upper-grid {
+                margin: 0em auto 3em auto;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                grid-gap: 20px;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, minmax(5px,2em));
+                list-style-type: none;
+                max-width:100%;
+                /*width: 360px;*/
+            }
+            section#grid-container .main-grid {
+                display: grid;
+                justify-content: space-between;
+                grid-gap: 20px;
+                grid-template-columns: 1fr 6fr 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                font-size: .7rem;
+                max-width: 100%;
+                /*width: 360px;*/
+                margin: 0 auto;
+            }
+            .upper-grid .box {
+                /*border: 1px black solid;*/                
+            }
+            .upper-grid .box2 {
+                /*border: 1px black dotted;*/
+                grid-column: 1;
+                justify-self: center;
+            }
+            .upper-grid .box3 {
+                
+            }
+            .upper-grid .box4 {
+                justify-self: center;
+            }
+            .upper-grid .box5 {
+                grid-column: 1;
+            }
+            section#grid-container .upper-grid .box5 a {
+                color: #DB1A1B;
+            }
+            .upper-grid .box6 {
+                
+            }
+            .upper-left {
+                grid-column: 2;
+                grid-row: 1;
+                display: grid;
+            }
+            .upper-right {
+                text-align: left;
+                grid-column: 2;
+                grid-row: 2;
+            }
+            .center-left {
+                text-align: right;
+                grid-column: 2;
+                grid-row: 3;
+                margin-top: 5rem;
+            }
+            .center-bottom-left {
+                grid-column: 2;
+                grid-row: 3;
+                width: 50%;
+            }
+            .center-bottom-right {
+                grid-column: 2;
+                grid-row: 3;;
+                    width: 50%;
+                    align-self: start;
+                    justify-self: end;
+            }
+
+            .big-type {
+                font-size: 2.5em;
+                line-height: 1.2em;
+                display: grid;
+                align-content: center;
+            }
+            .color {
+                color: #DB1A1B;
+                /*turquoise:#3cc3aa, fuchsia: #ff33cc; bright blue:#2e2eb8*/
+            }
+            .vert {                
+                -ms-transform: rotate(90deg); /* IE 9 */
+                -webkit-transform: rotate(90deg); /* Safari 3-8 */
+                transform: rotate(90deg);
+               /* align-self: end;*/
+                justify-self: end;
+            }
+
+        @media screen and (min-width: 768px) {
+             body#grid {
+                /*if menu is gone, remove universal padding from body*/
+                padding-top: 0;
+            }
+                 section#grid-container .upper-grid {
+                    font-size: 1em;
+                margin: 5em 10% 4em 25%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, minmax(5px,2em));
+                } 
+                section#grid-container .main-grid {
+                    font-size: 1em;
+                grid-gap: 20px;
+                grid-template-columns: 1fr minmax(16vw,1fr) minmax(16vw,1fr) 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                }    
+
+                .upper-grid .box {
+                    /*border: 1px black solid;*/                
+                }
+
+                .upper-grid .box2 {
+                    /*border: 1px black dotted;*/
+                    grid-column: 2;
+                }
+                .upper-grid .box3 {
+                    
+                }
+                .upper-grid .box4 {
+                    justify-self: center;
+                }
+                .upper-grid .box5 {
+                    grid-column: 2/-1;
+                }
+                .upper-grid .box6 {
+                    
+                }
+                .upper-left {
+                    grid-column: 1;
+                    grid-row: 1;
+                    display: grid;
+                }
+                .upper-right {
+                    text-align: left;
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+                .center-left {
+                    text-align: right;
+                    grid-column: 1;
+                    grid-row: 2;
+                    width: initial;
+                }
+                .center-bottom-left {
+                    grid-column: 2;
+                    grid-row: 3;
+                    width: initial;
+                    align-self: default;
+                    justify-self: default;
+                }
+                .center-bottom-right {
+                    grid-column: 3;
+                    grid-row: 3;
+                    width: initial;
+                    align-self: initial;
+                    justify-self: initial;
+                }
+                .vert {                
+                    -ms-transform: rotate(90deg); /* IE 9 */
+                    -webkit-transform: rotate(90deg); /* Safari 3-8 */
+                    transform: rotate(90deg);
+                   /* align-self: end;*/
+                    justify-self: end;
+                }
+
+        }
+         @media screen and (min-width: 921px) {
+
+                .upper-right {
+                    grid-column: 4;
+                }
+         }
+            
+        @media screen and (min-width: 1200px) {
+            section#grid-container {
+                max-width: 1000px;
+            }
+
+                .upper-grid .box {
+                    /*border: 1px black solid;*/                
+                }
+
+                .upper-grid .box2 {
+                    /*border: 1px black dotted;*/
+                    grid-column: 2;
+                }
+                .upper-grid .box3 {
+                    
+                }
+                .upper-grid .box4 {
+                    justify-self: center;
+                }
+                .upper-grid .box5 {
+                    grid-column: 2/-1;
+                }
+                .upper-grid .box6 {
+                    
+                }
+                .upper-left {
+                    grid-column: 1;
+                    grid-row: 1;
+                    display: grid;
+                }
+                .upper-right {
+                    text-align: left;
+                    grid-column: 4;
+                    grid-row: 1;
+                }
+                .center-left {
+                    text-align: right;
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+                .center-bottom-left {
+                    grid-column: 2;
+                    grid-row: 3;
+                }
+                .center-bottom-right {
+                    grid-column: 3;
+                    grid-row: 3;
+                }
+
+        }
+
+ @media screen and (min-width: 1700px) {
+
+            section#grid-container {
+                font-size: 1.2rem;
+            }
+        }
+
+        </style>
+        <script type="text/javascript" src="js.js"></script>
+
+	</body>
+</html>
